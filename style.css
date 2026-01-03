@@ -1,0 +1,157 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#1c1c1c;
+    color:#e5e7eb;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* MAIN CARD */
+.container{
+    background:#262626;
+    padding:20px;
+    border-radius:10px;
+    max-width:600px;
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    box-shadow:0 10px 25px rgba(0,0,0,0.6);
+    border:1px solid #333;
+}
+
+/* HEADING */
+h1{
+    text-align:center;
+    font-size:2rem;
+    color:#f5f5f5;
+}
+
+/* USER INPUT */
+.user-container{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.user-container p{
+    color:#9ca3af;
+}
+
+.user-input-container{
+    display:flex;
+    gap:10px;
+}
+
+#user-input{
+    flex:1;
+    padding:0.45rem;
+    border-radius:6px;
+    border:1px solid #3f3f46;
+    background:#111;
+    color:white;
+    outline:none;
+}
+
+#user-input::placeholder{
+    color:#6b7280;
+}
+
+#search-btn{
+    padding:0.45rem 0.9rem;
+    border-radius:6px;
+    border:none;
+    background:#f59e0b; /* LeetCode yellow */
+    color:#111;
+    font-weight:600;
+    cursor:pointer;
+}
+
+#search-btn:hover{
+    background:#d97706;
+}
+
+/* STATS */
+.stats-container{
+    display:none;
+}
+
+/* PROGRESS ROW */
+.progress{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+/* CIRCLE */
+.circle{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    position:relative;
+}
+
+/* PROGRESS COLORS (LeetCode-style) */
+.easy-progress{
+    background: conic-gradient(#22c55e var(--progress-degree,0%), #3a3a3a 0%);
+}
+
+.medium-progress{
+    background: conic-gradient(#f59e0b var(--progress-degree,0%), #3a3a3a 0%);
+}
+
+.hard-progress{
+    background: conic-gradient(#ef4444 var(--progress-degree,0%), #3a3a3a 0%);
+}
+
+.circle span{
+    font-size:1.1rem;
+    color:#f9fafb;
+}
+
+.circle small{
+    font-size:0.8rem;
+    color:#9ca3af;
+}
+
+/* STATS CARDS */
+.stats-card{
+    margin-top:10px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:12px;
+}
+
+.stat-box{
+    background:#1f1f1f;
+    padding:12px;
+    border-radius:8px;
+    text-align:center;
+    border:1px solid #333;
+}
+
+.stat-box h3{
+    font-size:0.9rem;
+    color:#9ca3af;
+}
+
+.stat-box p{
+    font-size:1.25rem;
+    font-weight:bold;
+    color:#f5f5f5;
+}
